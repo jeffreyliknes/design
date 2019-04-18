@@ -1,0 +1,128 @@
+html {
+  background-color: rgb(235, 235, 235);
+}
+
+body {
+  background-color: rgb(235, 235, 235);
+}
+
+.para {
+    min-height: 300px;
+    background-color: rgb(204, 203, 203);
+    margin-top: -15px;
+}
+
+// Red Academy Section
+
+.hero1 {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.767) 0, rgba(0, 0, 0, 0.4)),
+    #969696 url(../../assets/redacademy.jpeg) no-repeat center;
+  height: 60vh;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+
+
+// Travelling Section
+
+.asia1 {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.575) 0, rgba(0, 0, 0, 0.4)),
+  #969696 url(../../assets/Asia/asia1.jpg) no-repeat center;
+  height: 60vh;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.asia2 {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.575) 0, rgba(0, 0, 0, 0.4)),
+    #969696 url(../../assets/Asia/asia2.jpg) no-repeat center;
+    height: 60vh;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+
+  .asia3 {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.575) 0, rgba(0, 0, 0, 0.4)),
+    #969696 url(../../assets/Asia/asia3.jpg) no-repeat center;
+    height: 60vh;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+
+/* external css: flickity.css */
+
+
+.carousel {
+  background: #EEE;
+}
+
+.carousel-cell {
+
+  counter-increment: carousel-cell;
+}
+
+/* cell number */
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(carousel-cell);
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+}
+
+
+
+
+// Working Roche
+
+.hero3 {
+  background: url(../../assets/vancouver.jpg) no-repeat center;
+  height: 70vh;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+
+
+// Living/Travel in New Zealand
+
+.hero4 {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0)),
+  #969696 url(../../assets/nz.svg);
+  height: 70vh;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 30%;
+  background-position: 50% -60%;
+}
+
+
+// Rig
+
+.hero5 {
+  background: url(../../assets/pumpjacks.jpg);
+  height: 70vh;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: bottom;
+  background-size: cover;
+}
+
+
+
+// University/High School
+
+.hero6 {
+  background: url(../../assets/western.png) 80% 50%,
+    url(../../assets/uni.png) 20% 50%;
+  height: 80vh;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: wheat;
+}
+

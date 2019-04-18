@@ -10,28 +10,62 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-		<?php if ( have_posts() ) : ?>
+		<section class="hero">
+			<div class="hero1"></div>
+			
+			<!-- Red -->
+			<div class="para1 para">
+				<p class="red p"></p>
+				Graduated RED Academy as a Web Developer Professional 
+				<br>
+				While attending RED Academy I learned 
+			</div>
 
-			<?php if ( is_home() && ! is_front_page() ) : ?>
-				<header>
-					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
-				</header>
-			<?php endif; ?>
+			<!-- Travelling -->
+			<div class="slideshow-container">
 
-			<?php /* Start the Loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
+				<div class="main-carousel">
+					<div class="carousel-cell hero2 asia1"></div>
+					<div class="carousel-cell hero2 asia2"></div>
+					<div class="carousel-cell hero2 asia3"></div>
+				</div>
+			</div>
+			<div class="para2 para"></div>
 
-				<?php get_template_part( 'template-parts/content' ); ?>
 
-			<?php endwhile; ?>
+			<!-- Vancouver -->
+			<div class="hero3"></div>
+			<div class="para3 para">
+				<p class="van p">
 
-			<?php the_posts_navigation(); ?>
+				</p>
+			</div>
 
-		<?php else : ?>
+			<!-- NZ -->
+			<div class="hero4"></div>
+			<div class="para4 para">
+				<p class="nz p">
 
-			<?php get_template_part( 'template-parts/content', 'none' ); ?>
+				</p>
+			</div>
 
-		<?php endif; ?>
+			<!-- Winter Petroleum -->
+			<div class="hero5"></div>
+			<div class="para5 para">
+				<p class="winter p">
+
+				</p>
+			</div>
+
+			<!-- School -->
+			<div class="hero6"></div>
+			<div class="para6 para">
+				<p class="university p"><span>2012</span>Attended University of Calgary - Business Commerce</p>
+				<p class="westerncanada p"><span>2010 </span>Gradutated Western Canada High</p>
+			</div>
+
+
+		</section>
 
 	
 

@@ -226,64 +226,6 @@ th {
 # Embedded Fonts
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
-# Typography
---------------------------------------------------------------*/
-body,
-button,
-input,
-select,
-textarea {
-  color: #404040;
-  font-family: sans-serif;
-  font-size: 16px;
-  font-size: 1rem;
-  line-height: 1.5; }
-
-/* Headings */
-h1, h2, h3, h4, h5, h6 {
-  clear: both; }
-
-/* Copy */
-p {
-  margin-bottom: 1.5rem; }
-
-dfn, cite, em, i {
-  font-style: italic; }
-
-blockquote {
-  margin: 0 1.5rem; }
-
-address {
-  margin: 0 0 1.5rem; }
-
-pre {
-  background: #eee;
-  font-family: "Courier 10 Pitch", Courier, monospace;
-  font-size: 15px;
-  font-size: 0.9375rem;
-  line-height: 1.6;
-  margin-bottom: 1.6rem;
-  max-width: 100%;
-  overflow: auto;
-  padding: 1.6rem; }
-
-code, kbd, tt, var {
-  font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
-  font-size: 15px;
-  font-size: 0.9375rem; }
-
-abbr, acronym {
-  border-bottom: 1px dotted #666;
-  cursor: help; }
-
-mark, ins {
-  background: #fff9c0;
-  text-decoration: none; }
-
-big {
-  font-size: 125%; }
-
-/*--------------------------------------------------------------
 # Elements
 --------------------------------------------------------------*/
 html {
@@ -416,88 +358,6 @@ textarea {
   width: 100%; }
 
 /*--------------------------------------------------------------
-# Navigation
---------------------------------------------------------------*/
-/* Links */
-a {
-  color: royalblue; }
-  a:visited {
-    color: purple; }
-  a:hover, a:focus, a:active {
-    color: midnightblue; }
-  a:focus {
-    outline: thin dotted; }
-  a:hover, a:active {
-    outline: 0; }
-
-/* Menus */
-.main-navigation {
-  clear: both;
-  display: block;
-  float: left;
-  width: 100%; }
-  .main-navigation ul {
-    display: none;
-    list-style: none;
-    margin: 0;
-    padding-left: 0; }
-    .main-navigation ul ul {
-      -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-              box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-      float: left;
-      position: absolute;
-      top: 1.5rem;
-      left: -999rem;
-      z-index: 99999; }
-      .main-navigation ul ul ul {
-        left: -999rem;
-        top: 0; }
-      .main-navigation ul ul li:hover > ul,
-      .main-navigation ul ul li.focus > ul {
-        left: 100%; }
-      .main-navigation ul ul a {
-        width: 200px; }
-    .main-navigation ul li:hover > ul,
-    .main-navigation ul li.focus > ul {
-      left: auto; }
-  .main-navigation li {
-    float: left;
-    position: relative; }
-  .main-navigation a {
-    display: block;
-    text-decoration: none; }
-
-/* Small menu. */
-.menu-toggle,
-.main-navigation.toggled ul {
-  display: block; }
-
-@media screen and (min-width: 768px) {
-  .menu-toggle {
-    display: none; }
-  .main-navigation ul {
-    display: block; } }
-
-.site-main .comment-navigation, .site-main
-.posts-navigation, .site-main
-.post-navigation {
-  margin: 0 0 1.5rem;
-  overflow: hidden; }
-
-.comment-navigation .nav-previous,
-.posts-navigation .nav-previous,
-.post-navigation .nav-previous {
-  float: left;
-  width: 50%; }
-
-.comment-navigation .nav-next,
-.posts-navigation .nav-next,
-.post-navigation .nav-next {
-  float: right;
-  text-align: right;
-  width: 50%; }
-
-/*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
 /* Text meant only for screen readers. */
@@ -569,44 +429,6 @@ a {
   display: none; }
 
 /*--------------------------------------------------------------
-# Content
---------------------------------------------------------------*/
-/* Posts and pages */
-.sticky {
-  display: block; }
-
-.hentry {
-  margin: 0 0 1.5rem; }
-
-.updated:not(.published) {
-  display: none; }
-
-.single .byline,
-.group-blog .byline {
-  display: inline; }
-
-.page-content,
-.entry-content,
-.entry-summary {
-  margin: 1.5rem 0 0; }
-
-.page-links {
-  clear: both;
-  margin: 0 0 1.5rem; }
-
-/* Asides */
-.blog .format-aside .entry-title,
-.archive .format-aside .entry-title {
-  display: none; }
-
-/* Comments */
-.comment-content a {
-  word-wrap: break-word; }
-
-.bypostauthor {
-  display: block; }
-
-/*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
 .page-content .wp-smiley,
@@ -671,9 +493,112 @@ object {
 --------------------------------------------------------------*/
 /* Front page */
 .site-footer {
-  height: 40vh;
-  background-color: #0a0a0a; }
+  min-height: 80vh;
+  background-color: #0a0a0a;
+  margin-top: -15px; }
 
 .fa {
   color: white;
-  font-size: 30px; }
+  font-size: 10px; }
+
+.site-main {
+  min-height: 100vh; }
+
+html {
+  background-color: #ebebeb; }
+
+body {
+  background-color: #ebebeb; }
+
+.para {
+  min-height: 300px;
+  background-color: #cccbcb;
+  margin-top: -15px; }
+
+.hero1 {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.767)), to(rgba(0, 0, 0, 0.4))), #969696 url(../../assets/redacademy.jpeg) no-repeat center;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.767) 0, rgba(0, 0, 0, 0.4)), #969696 url(../../assets/redacademy.jpeg) no-repeat center;
+  height: 60vh;
+  background-attachment: fixed;
+  background-size: cover; }
+
+.asia1 {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.575)), to(rgba(0, 0, 0, 0.4))), #969696 url(../../assets/Asia/asia1.jpg) no-repeat center;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.575) 0, rgba(0, 0, 0, 0.4)), #969696 url(../../assets/Asia/asia1.jpg) no-repeat center;
+  height: 60vh;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 50% 50%; }
+
+.asia2 {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.575)), to(rgba(0, 0, 0, 0.4))), #969696 url(../../assets/Asia/asia2.jpg) no-repeat center;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.575) 0, rgba(0, 0, 0, 0.4)), #969696 url(../../assets/Asia/asia2.jpg) no-repeat center;
+  height: 60vh;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 50% 50%; }
+
+.asia3 {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.575)), to(rgba(0, 0, 0, 0.4))), #969696 url(../../assets/Asia/asia3.jpg) no-repeat center;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.575) 0, rgba(0, 0, 0, 0.4)), #969696 url(../../assets/Asia/asia3.jpg) no-repeat center;
+  height: 60vh;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 50% 50%; }
+
+/* external css: flickity.css */
+.carousel {
+  background: #EEE; }
+
+.carousel-cell {
+  counter-increment: carousel-cell; }
+
+/* cell number */
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(carousel-cell);
+  line-height: 200px;
+  font-size: 80px;
+  color: white; }
+
+.hero3 {
+  background: url(../../assets/vancouver.jpg) no-repeat center;
+  height: 70vh;
+  background-attachment: fixed;
+  background-size: cover; }
+
+.hero4 {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0))), #969696 url(../../assets/nz.svg);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0)), #969696 url(../../assets/nz.svg);
+  height: 70vh;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 30%;
+  background-position: 50% -60%; }
+
+.hero5 {
+  background: url(../../assets/pumpjacks.jpg);
+  height: 70vh;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: bottom;
+  background-size: cover; }
+
+.hero6 {
+  background: url(../../assets/western.png) 80% 50%, url(../../assets/uni.png) 20% 50%;
+  height: 80vh;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: wheat; }
+
+.main-navigation {
+  height: 70vh; }
+
+.logo-container {
+  text-align: center; }
+  .logo-container .header-logo {
+    width: 18%; }
+
+.logo-anchor {
+  text-align: center; }
