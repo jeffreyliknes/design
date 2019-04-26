@@ -4,125 +4,182 @@ html {
 
 body {
   background-color: rgb(235, 235, 235);
+  font-family: 'Anonymous Pro', monospace;
 }
 
-.para {
-    min-height: 300px;
-    background-color: rgb(204, 203, 203);
-    margin-top: -15px;
+.hero > * {
+  @include border-hero;
 }
 
 // Red Academy Section
 
 .hero1 {
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.767) 0, rgba(0, 0, 0, 0.4)),
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0, rgba(0, 0, 0, 0.4)),
     #969696 url(../../assets/redacademy.jpeg) no-repeat center;
-  height: 60vh;
-  background-attachment: fixed;
-  background-size: cover;
+  @include header-attachment;
+  @include hero-flex;
+  @include hero-background;
 }
 
-
+.header-align {
+  @include header-attachment;
+}
 
 // Travelling Section
 
+.hero2 {
+  @include asian-header;
+  @include header-attachment-asia;
+  border-right: 2px solid black;
+}
+
 .asia1 {
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.575) 0, rgba(0, 0, 0, 0.4)),
-  #969696 url(../../assets/Asia/asia1.jpg) no-repeat center;
-  height: 60vh;
-  background-attachment: fixed;
+  background: url(../../assets/Asia/asia1.jpg) no-repeat center;
   background-size: cover;
   background-position: 50% 50%;
 }
 
 .asia2 {
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.575) 0, rgba(0, 0, 0, 0.4)),
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.02) 0, rgba(0, 0, 0, 0.4)),
     #969696 url(../../assets/Asia/asia2.jpg) no-repeat center;
-    height: 60vh;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: 50% 50%;
-  }
+  background-size: cover;
+  background-position: 50% 50%;
+}
 
-  .asia3 {
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.575) 0, rgba(0, 0, 0, 0.4)),
+.asia3 {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.02) 0, rgba(0, 0, 0, 0.4)),
     #969696 url(../../assets/Asia/asia3.jpg) no-repeat center;
-    height: 60vh;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: 50% 50%;
-  }
+  background-size: cover;
+  background-position: 50% 50%;
+}
 
+.asia4 {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.02) 0, rgba(0, 0, 0, 0.4)),
+    #969696 url(../../assets/Asia/asia4.jpg) no-repeat;
+  background-size: cover;
+  background-position: 50% 15%;
+}
+
+.asia5 {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.02) 0, rgba(0, 0, 0, 0.4)),
+    #969696 url(../../assets/Asia/asia5.jpg) no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.asia6 {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.02) 0, rgba(0, 0, 0, 0.4)),
+    #969696 url(../../assets/Asia/asia6.jpg) no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+.asia7 {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.02) 0, rgba(0, 0, 0, 0.4)),
+    #969696 url(../../assets/Asia/asia7.jpg) no-repeat;
+  background-size: cover;
+  background-position: 50% 75%;
+}
+
+.asia8 {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.02) 0, rgba(0, 0, 0, 0.4)),
+    #969696 url(../../assets/Asia/asia8.jpg) no-repeat;
+  background-size: cover;
+  background-position: 50% 75%;
+}
+.asia9 {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.02) 0, rgba(0, 0, 0, 0.4)),
+    #969696 url(../../assets/Asia/asia9.jpg) no-repeat;
+  background-size: cover;
+  background-position: 50% 35%;
+}
+.asia10 {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.02) 0, rgba(0, 0, 0, 0.4)),
+    #969696 url(../../assets/Asia/asia10.jpg) no-repeat;
+  background-size: cover;
+  background-position: 50% 35%;
+}
 /* external css: flickity.css */
 
+.main-carousel .carousel-cell {
+  width: 45%;
+}
 
-.carousel {
-  background: #EEE;
+.slideshow-container {
+  border: none;
 }
 
 .carousel-cell {
-
-  counter-increment: carousel-cell;
+  width: 66%;
+  height: 70vh;
+  counter-increment: gallery-cell;
 }
 
 /* cell number */
 .carousel-cell:before {
   display: block;
   text-align: center;
-  content: counter(carousel-cell);
   line-height: 200px;
   font-size: 80px;
   color: white;
 }
 
-
-
+.dot {
+  background: white !important;
+}
 
 // Working Roche
 
 .hero3 {
   background: url(../../assets/vancouver.jpg) no-repeat center;
-  height: 70vh;
-  background-attachment: fixed;
-  background-size: cover;
+  @include hero-background;
+  @include hero-flex;
 }
 
-
-
-// Living/Travel in New Zealand
+// New Zealand
 
 .hero4 {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0)),
-  #969696 url(../../assets/nz.svg);
-  height: 70vh;
+    #969696 url(../../assets/nz.svg);
+  @include hero-flex;
+  @include hero-background;
+  background-size: 300px;
+  background-position: 50% 70%;
+  @include tablet {
+    background-position: 50% -70%;
+    background-size: 400px;
+  }
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 30%;
-  background-position: 50% -60%;
 }
-
 
 // Rig
 
 .hero5 {
   background: url(../../assets/pumpjacks.jpg);
   height: 70vh;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  @include hero-flex;
+  @include hero-background;
   background-position: bottom;
-  background-size: cover;
+  @include desktop {
+    background-position: 50% 75%;
+  }
 }
-
-
 
 // University/High School
 
 .hero6 {
-  background: url(../../assets/western.png) 80% 50%,
-    url(../../assets/uni.png) 20% 50%;
+  background: url(../../assets/western.png) 90% 43%,
+    url(../../assets/uni.png) 16% 45%;
   height: 80vh;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-color: wheat;
-}
+  background-color: darkslategrey;
+  background-size: 130px;
+  @include tablet {
+    background-size: 170px;
+  }
 
+  @include desktop {
+    background-size: 190px;
+    background-position: 30% 43%, 70% 45%;
+  }
+}

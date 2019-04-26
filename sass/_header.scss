@@ -1,16 +1,51 @@
-
-
-.main-navigation {
-  height: 70vh;
+.logo-container {
+  text-align: center;
+  margin-bottom: 2rem;
+  .header-logo {
+    width: 150px;
+    @include tablet {
+      width: 200px;
+    }
+  }
 }
 
-.logo-container {
-    text-align: center;
-  .header-logo {
-    width: 18%;
+.info-divider {
+  font-family: $font__main;
+  line-height: 2;
+  margin-left: 2rem;
+  @include tablet {
+    justify-content: space-evenly;
+    display: flex;
+  }
+}
+
+.info-divider > * {
+  font-family: 'Oxygen Mono', monospace;
+  @include tablet {
+    padding: 0 3rem;
+    border-right: 1px solid black;
   }
 }
 
 .logo-anchor {
-    text-align: center;
+  text-align: center;
+}
+
+.brushstroke {
+  background: url(../../assets/brushstroke.png) 70% -140% no-repeat;
+  background-size: 120%;
+  background-size: 800px;
+  @include tablet {
+    background-position: 70% 00%;
+    background-size: 1500px;
+  }
+  @include desktop {
+    background-position: 70% -10%;
+    background-size: 1800px;
+  }
+  height: 200px;
+}
+
+.resume {
+  border-right: none;
 }

@@ -1,12 +1,79 @@
 // Rem output with px fallback
 @mixin font-size($sizeValue: 1) {
-	font-size: ($sizeValue * 16) * 1px;
-	font-size: $sizeValue * 1rem;
+  font-size: ($sizeValue * 16) * 1px;
+  font-size: $sizeValue * 1rem;
 }
 
 // Center block
 @mixin center-block {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@mixin hero-flex {
+  display: flex;
+}
+
+// header commons
+
+@mixin header-attachment {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+@mixin header-attachment-asia {
+	display: flex;
+	width: 100%;
+	align-items: flex-end;
+	justify-content: center;
+	color: rgb(255, 255, 255);
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	font-size: 75%;
+}
+
+// background pictures common
+
+@mixin hero-background {
+  height: 70vh;
+  background-attachment: fixed;
+  background-size: cover;
+
+}
+
+@mixin border-hero {
+	border-top: 40px solid rgba(0, 0, 0, 0.308);
+	border-bottom: 40px solid rgba(0, 0, 0, 0.308);
+}
+
+// Asia pics
+
+@mixin asian-header {
+	background-size: cover;
+	display: flex;
+}
+
+
+
+// Media Queries 
+
+
+$tablet-width: 600px;
+
+$desktop-width: 1024px;
+
+@mixin tablet {
+  @media (min-width: $tablet-width) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: $desktop-width) {
+    @content;
+  }
 }

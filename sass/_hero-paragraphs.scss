@@ -1,0 +1,62 @@
+.para {
+    min-height: 300px;
+    background-color: black;
+    color: white;
+  }
+  
+  p, ul {
+    margin: 0 1rem;
+    @include tablet {
+    margin: 0 6rem;
+
+    }
+    @include desktop {
+        margin: 0 10rem;
+    
+        }
+  }
+  li {
+    margin-left: 2rem;
+  }
+
+//   Red
+  .red-website a {
+      color: red;
+      text-decoration: none;
+  }
+
+//   quotes 
+.fas {
+    position: absolute;
+}
+.fa-quote-left {
+    // left: 3rem;
+}
+.fa-quote-right {
+    // left: 3rem;
+
+}
+
+//   Roche 
+
+  .roche-website {
+      text-decoration: underline;
+      color: white; 
+  }
+
+//   winter
+
+.para5 {
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+}
+
+//   Universtiy 
+
+.para6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
