@@ -36,16 +36,16 @@
 					
 					<div class="info-divider">
 						<div class="number">
-							<div class="info-divider-centered"><span class="number-span">phone </span><br>236 986 4124</div>
+							<a href="tel:+12369864124"><div class="info-divider-centered"><span class="number-span">phone </span><br>236 986 4124</div></a>
 						</div>
 						<div class="email">
-							<div class="info-divider-centered"><span class="email-span">email </span><br>jeff.liknes@gmail.com</div>
+							<a href="mailto:jeff.liknes@gmail.com"><div class="info-divider-centered"><span class="email-span">email </span><br>jeff.liknes@gmail.com</div></a>
 						</div>
 						<div class="linkedin">
-							<div class="info-divider-centered"><span class="linkedin-span">linkedin </span><br>Jeff Liknes</div>
+							<a href="https://www.linkedin.com/in/jeff-liknes-798951175/"><div class="info-divider-centered"><span class="linkedin-span"> linkedin  </span><br>Jeff Liknes</div></a>
 						</div>
 						<div class="github">
-							<div class="info-divider-centered"><span class="github-span">github </span><br>jeffreyliknes</div>
+							<a href="https://github.com/jeffreyliknes?tab=repositories"><div class="info-divider-centered"><span class="github-span">github </span><br>jeffreyliknes</div></a>
 						</div>
 					</div>
 				

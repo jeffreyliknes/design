@@ -826,7 +826,7 @@ body {
   .number:hover, .email:hover, .linkedin:hover, .github:hover {
     background: url(../../assets/brushstroke.png);
     background-position: 50% 70%;
-    background-size: 100% 125%;
+    background-size: 100% 110%;
     background-repeat: no-repeat;
     color: white; }
 

@@ -1,0 +1,12 @@
+
+prod:
+    scheme: ftp
+    host: 162.241.218.16
+    port: 21
+    user: esigncn8
+    pass: guQ!G3yxsShausOy
+    branch: master
+    check: true
+    path:
+        remote: public_html/wp-content/themes/design/
+    exclude: ["README.md", ".gitignore"]
