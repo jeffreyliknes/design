@@ -784,10 +784,16 @@ body {
               justify-content: space-evenly;
       display: -webkit-box;
       display: -ms-flexbox;
-      display: flex; } }
+      display: flex;
+      margin-left: 0;
+      height: 7rem;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; } }
 
 .info-divider > * {
-  font-family: 'Oxygen Mono', monospace; }
+  font-family: 'Oxygen Mono', monospace;
+  height: 7rem; }
   @media (min-width: 600px) {
     .info-divider > * {
       padding: 0 3rem;
@@ -812,6 +818,20 @@ body {
 
 .resume {
   border-right: none; }
+
+.number, .email, .linkedin, .github {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .number:hover, .email:hover, .linkedin:hover, .github:hover {
+    background: url(../../assets/brushstroke.png);
+    background-position: 50% 70%;
+    background-size: 100% 125%;
+    background-repeat: no-repeat;
+    color: white; }
+
+.info-divider-centered {
+  margin: auto 0; }
 
 .para {
   min-height: 300px;

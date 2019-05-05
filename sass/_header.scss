@@ -16,11 +16,15 @@
   @include tablet {
     justify-content: space-evenly;
     display: flex;
+    margin-left: 0;
+    height: 7rem;
+    align-items: center;
   }
 }
 
 .info-divider > * {
   font-family: 'Oxygen Mono', monospace;
+  height: 7rem;
   @include tablet {
     padding: 0 3rem;
     border-right: 1px solid black;
@@ -48,4 +52,19 @@
 
 .resume {
   border-right: none;
+}
+
+.number, .email, .linkedin, .github {
+  display: flex;
+  &:hover {
+    background: url(../../assets/brushstroke.png);
+    background-position: 50% 70%;
+    background-size: 100% 125%;
+    background-repeat: no-repeat;
+    color: white;
+  }
+}
+
+.info-divider-centered {
+  margin: auto 0;
 }

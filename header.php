@@ -35,12 +35,18 @@
 					</div>
 					
 					<div class="info-divider">
-						<div class="number"><span class="number-span">phone </span><br>236 986 4124</div>
-						<div class="email"><span class="email-span">email </span><br>jeff.liknes@gmail.com</div>
-						<div class="resume"><span class="resume-span">resume </span><br>
-							<a href="http://localhost:8888/design-by-jeff/wp-content/uploads/2019/04/Jeff-Liknes-Resume.pdf">resume</a>
+						<div class="number">
+							<div class="info-divider-centered"><span class="number-span">phone </span><br>236 986 4124</div>
 						</div>
-						<div class="github"><span class="github-span">github </span><br>jeffreyliknes</div>
+						<div class="email">
+							<div class="info-divider-centered"><span class="email-span">email </span><br>jeff.liknes@gmail.com</div>
+						</div>
+						<div class="linkedin">
+							<div class="info-divider-centered"><span class="linkedin-span">linkedin </span><br>Jeff Liknes</div>
+						</div>
+						<div class="github">
+							<div class="info-divider-centered"><span class="github-span">github </span><br>jeffreyliknes</div>
+						</div>
 					</div>
 				
 					<div class="brushstroke">
