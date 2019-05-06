@@ -548,6 +548,11 @@ object {
         -ms-flex: 1;
             flex: 1; }
 
+.footer-info {
+  font-family: sans-serif;
+  line-height: 2;
+  margin-left: 2rem; }
+
 .footer-info > * {
   padding: 1rem 0; }
   @media (min-width: 600px) {
@@ -555,7 +560,48 @@ object {
       margin-left: 2rem; } }
   @media (min-width: 1024px) {
     .footer-info > * {
-      margin-left: 3rem; } }
+      margin-left: 10rem; } }
+
+.footer-number,
+.footer-email,
+.footer-linkedin,
+.footer-github,
+.footer-resume {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .footer-number:hover,
+  .footer-email:hover,
+  .footer-linkedin:hover,
+  .footer-github:hover,
+  .footer-resume:hover {
+    background: url(../../assets/brushstroke.png);
+    background-position: 0% 70%;
+    background-size: 50% 110%;
+    background-repeat: no-repeat;
+    color: white; }
+    @media (min-width: 600px) {
+      .footer-number:hover,
+      .footer-email:hover,
+      .footer-linkedin:hover,
+      .footer-github:hover,
+      .footer-resume:hover {
+        background-position: 40% 70%;
+        background-size: 45% 110%; } }
+    @media (min-width: 1024px) {
+      .footer-number:hover,
+      .footer-email:hover,
+      .footer-linkedin:hover,
+      .footer-github:hover,
+      .footer-resume:hover {
+        background-position: 40% 70%;
+        background-size: 100% 110%; } }
+
+.anchor-footer {
+  text-decoration: none;
+  color: black; }
+  .anchor-footer:hover {
+    color: white; }
 
 .copyright {
   text-align: center;
@@ -773,11 +819,45 @@ body {
       .logo-container .header-logo {
         width: 200px; } }
 
+.logo-anchor {
+  text-align: center; }
+
+.number,
+.email,
+.linkedin,
+.github {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .number:hover,
+  .email:hover,
+  .linkedin:hover,
+  .github:hover {
+    background: url(../../assets/brushstroke.png);
+    background-position: 50% 70%;
+    background-size: 100% 110%;
+    background-repeat: no-repeat;
+    color: white; }
+    @media (min-width: 600px) {
+      .number:hover,
+      .email:hover,
+      .linkedin:hover,
+      .github:hover {
+        background-position: 40% 70%;
+        background-size: 45% 110%; } }
+    @media (min-width: 1024px) {
+      .number:hover,
+      .email:hover,
+      .linkedin:hover,
+      .github:hover {
+        background-position: 40% 70%;
+        background-size: 100% 110%; } }
+
 .info-divider {
   font-family: sans-serif;
   line-height: 2;
   margin-left: 2rem; }
-  @media (min-width: 600px) {
+  @media (min-width: 1024px) {
     .info-divider {
       -webkit-box-pack: space-evenly;
           -ms-flex-pack: space-evenly;
@@ -794,13 +874,29 @@ body {
 .info-divider > * {
   font-family: 'Oxygen Mono', monospace;
   height: 7rem; }
-  @media (min-width: 600px) {
+  @media (min-width: 1024px) {
     .info-divider > * {
       padding: 0 3rem;
       border-right: 1px solid black; } }
 
-.logo-anchor {
-  text-align: center; }
+.info-divider-centered {
+  margin: auto 0;
+  margin-left: 4rem; }
+  @media (min-width: 600px) {
+    .info-divider-centered {
+      margin-left: 16rem; } }
+  @media (min-width: 1024px) {
+    .info-divider-centered {
+      margin-left: 0; } }
+
+.anchor-header {
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: black; }
+  .anchor-header:hover {
+    color: white; }
 
 .brushstroke {
   background: url(../../assets/brushstroke.png) 70% -140% no-repeat;
@@ -815,23 +911,6 @@ body {
     .brushstroke {
       background-position: 70% -10%;
       background-size: 1800px; } }
-
-.resume {
-  border-right: none; }
-
-.number, .email, .linkedin, .github {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
-  .number:hover, .email:hover, .linkedin:hover, .github:hover {
-    background: url(../../assets/brushstroke.png);
-    background-position: 50% 70%;
-    background-size: 100% 110%;
-    background-repeat: no-repeat;
-    color: white; }
-
-.info-divider-centered {
-  margin: auto 0; }
 
 .para {
   min-height: 300px;

@@ -36,16 +36,16 @@
 					
 					<div class="info-divider">
 						<div class="number">
-							<a href="tel:+12369864124"><div class="info-divider-centered"><span class="number-span">phone </span><br>236 986 4124</div></a>
+							<a class="anchor-header" href="tel:+12369864124"><div class="info-divider-centered"><span class="number-span">phone </span><br>236 986 4124</div></a>
 						</div>
 						<div class="email">
-							<a href="mailto:jeff.liknes@gmail.com"><div class="info-divider-centered"><span class="email-span">email </span><br>jeff.liknes@gmail.com</div></a>
+							<a class="anchor-header" href="mailto:jeff.liknes@gmail.com"><div class="info-divider-centered"><span class="email-span">email </span><br>jeff.liknes@gmail.com</div></a>
 						</div>
 						<div class="linkedin">
-							<a href="https://www.linkedin.com/in/jeff-liknes-798951175/"><div class="info-divider-centered"><span class="linkedin-span"> linkedin  </span><br>Jeff Liknes</div></a>
+							<a class="anchor-header" href="https://www.linkedin.com/in/jeff-liknes-798951175/"><div class="info-divider-centered"><span class="linkedin-span"> linkedin  </span><br>Jeff Liknes</div></a>
 						</div>
 						<div class="github">
-							<a href="https://github.com/jeffreyliknes?tab=repositories"><div class="info-divider-centered"><span class="github-span">github </span><br>jeffreyliknes</div></a>
+							<a class="anchor-header" href="https://github.com/jeffreyliknes?tab=repositories"><div class="info-divider-centered"><span class="github-span">github </span><br>jeffreyliknes</div></a>
 						</div>
 					</div>
 				

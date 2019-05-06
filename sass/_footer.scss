@@ -1,78 +1,107 @@
-
-
-
 .site-footer {
-    min-height: 80vh;
-    background-color: rgb(235, 235, 235);
-    margin-top: -25px;
+  min-height: 80vh;
+  background-color: rgb(235, 235, 235);
+  margin-top: -25px;
 }
 
 .fa {
-    color: white;
-    font-size: 10px;
+  color: white;
+  font-size: 10px;
 }
 
 .footer-svg {
-    width: 100%;
-    height: 30vh;
-    transform: rotate(180deg);
-    
+  width: 100%;
+  height: 30vh;
+  transform: rotate(180deg);
 }
 
 .footer-logo-container {
-    display: flex;
-    width: 100%;
-    justify-content: flex-end;
-    align-content: center;
-    
-    .footer-logo-anchor {
-        text-align: right;
-        padding-right: 2rem;
-        @include desktop {
-            text-align: center;
-            padding: 0;
-        }
-    }
-    .footer-logo {
-        width: 100px;
-        @include tablet {
-            width: 170px;
-        }
-        @include desktop {
-            width: 30%;
-        }
-    }
-}
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  align-content: center;
 
+  .footer-logo-anchor {
+    text-align: right;
+    padding-right: 2rem;
+    @include desktop {
+      text-align: center;
+      padding: 0;
+    }
+  }
+  .footer-logo {
+    width: 100px;
+    @include tablet {
+      width: 170px;
+    }
+    @include desktop {
+      width: 30%;
+    }
+  }
+}
 
 // footer info
 
 .footer-info-logo {
-    display: flex;
-    font-size: 14px;
-    .footer-info {
-        flex: 1;
-        border-right: 1px solid black;
-      
-        
-    }
-    .footer-logo-container {
-        flex: 1;
-    }
+  display: flex;
+  font-size: 14px;
+  .footer-info {
+    flex: 1;
+    border-right: 1px solid black;
+  }
+  .footer-logo-container {
+    flex: 1;
+  }
+}
+
+.footer-info {
+    font-family: $font__main;
+    line-height: 2;
+    margin-left: 2rem;
 }
 
 .footer-info > * {
-    padding: 1rem 0;
+  padding: 1rem 0;
+  @include tablet {
+    margin-left: 2rem;
+  }
+  @include desktop {
+    margin-left: 10rem;
+  }
+}
+
+.footer-number,
+.footer-email,
+.footer-linkedin,
+.footer-github,
+.footer-resume {
+  display: flex;
+  &:hover {
+    background: url(../../assets/brushstroke.png);
+    background-position: 0% 70%;
+    background-size: 50% 110%;
+    background-repeat: no-repeat;
+    color: white;
     @include tablet {
-        margin-left: 2rem;
+      background-position: 40% 70%;
+      background-size: 45% 110%;
     }
     @include desktop {
-        margin-left: 3rem;
+      background-position: 40% 70%;
+      background-size: 100% 110%;
+    }
+  }
+}
+
+.anchor-footer {
+    text-decoration: none;
+    color: black;
+    &:hover {
+        color: white;
     }
 }
 
-
 .copyright {
-    text-align: center;
-    padding-top: 2rem;
+  text-align: center;
+  padding-top: 2rem;
 }

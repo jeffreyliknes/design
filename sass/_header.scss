@@ -1,3 +1,5 @@
+// Logo Container
+
 .logo-container {
   text-align: center;
   margin-bottom: 2rem;
@@ -9,11 +11,39 @@
   }
 }
 
+.logo-anchor {
+  text-align: center;
+}
+
+// Information Divider
+
+.number,
+.email,
+.linkedin,
+.github {
+  display: flex;
+  &:hover {
+    background: url(../../assets/brushstroke.png);
+    background-position: 50% 70%;
+    background-size: 100% 110%;
+    background-repeat: no-repeat;
+    color: white;
+    @include tablet {
+      background-position: 40% 70%;
+      background-size: 45% 110%;
+    }
+    @include desktop {
+      background-position: 40% 70%;
+      background-size: 100% 110%;
+    }
+  }
+}
+
 .info-divider {
   font-family: $font__main;
   line-height: 2;
   margin-left: 2rem;
-  @include tablet {
+  @include desktop {
     justify-content: space-evenly;
     display: flex;
     margin-left: 0;
@@ -25,15 +55,34 @@
 .info-divider > * {
   font-family: 'Oxygen Mono', monospace;
   height: 7rem;
-  @include tablet {
+
+  @include desktop {
     padding: 0 3rem;
     border-right: 1px solid black;
   }
 }
 
-.logo-anchor {
-  text-align: center;
+.info-divider-centered {
+  margin: auto 0;
+  margin-left: 4rem;
+  @include tablet {
+    margin-left: 16rem;
+  }
+  @include desktop {
+    margin-left: 0;
+  }
 }
+
+.anchor-header {
+  text-decoration: none;
+  display: flex;
+  color: black;
+  &:hover {
+    color: white;
+  }
+}
+
+// Brushstroke Divider
 
 .brushstroke {
   background: url(../../assets/brushstroke.png) 70% -140% no-repeat;
@@ -48,23 +97,4 @@
     background-size: 1800px;
   }
   height: 200px;
-}
-
-.resume {
-  border-right: none;
-}
-
-.number, .email, .linkedin, .github {
-  display: flex;
-  &:hover {
-    background: url(../../assets/brushstroke.png);
-    background-position: 50% 70%;
-    background-size: 100% 110%;
-    background-repeat: no-repeat;
-    color: white;
-  }
-}
-
-.info-divider-centered {
-  margin: auto 0;
 }

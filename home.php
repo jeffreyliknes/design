@@ -37,7 +37,7 @@ get_header(); ?>
 				<br>
 					<ul>
 						<li>Responsive HTML/CSS</li>
-						<li>JavaScript (vanilla, jQuery, and other frameworks)</li>
+						<li>JavaScript (vanilla, jQuery, and studying React.js)</li>
 						<li>PHP</li>
 						<li>Performance</li>
 						<li>Animation</li>

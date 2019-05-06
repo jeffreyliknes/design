@@ -20,12 +20,24 @@
 				<section class="footer-info-logo">
 				
 					<div class="footer-info">
-						<div class="footer-number">236 986 4124</div>
-						<div class="footer-email">jeff.liknes@gmail.com</div>
 						<div class="footer-resume">
-							<a href="http://localhost:8888/design-by-jeff/wp-content/uploads/2019/04/Jeff-Liknes-Resume.pdf">Resume</a>
+							<a class="anchor-footer" href="http://localhost:8888/design-by-jeff/wp-content/uploads/2019/04/Jeff-Liknes-Resume.pdf"><div class="info-divider-centered">Resume</a></div>
+						</div>
+						<div class="footer-number">
+							<a class="anchor-footer" href="tel:+12369864124"><div class="info-divider-centered"><span class="number-span">phone </span><br>236 986 4124</div></a>
+						</div>
+						<div class="footer-email">
+							<a class="anchor-footer" href="mailto:jeff.liknes@gmail.com"><div class="info-divider-centered"><span class="email-span">email </span><br>jeff.liknes@gmail.com</div></a>
+						</div>
+						<div class="footer-linkedin">
+							<a class="anchor-footer" href="https://www.linkedin.com/in/jeff-liknes-798951175/"><div class="info-divider-centered"><span class="linkedin-span"> linkedin  </span><br>Jeff Liknes</div></a>
+						</div>
+						<div class="footer-github">
+							<a class="anchor-footer" href="https://github.com/jeffreyliknes?tab=repositories"><div class="info-divider-centered"><span class="github-span">github </span><br>jeffreyliknes</div></a>
 						</div>
 					</div>
+
+				
 
 					<div class="footer-logo-container">
 						<a class="footer-logo-anchor" href="<?php bloginfo( 'url' ); ?>">
