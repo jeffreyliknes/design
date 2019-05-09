@@ -19,7 +19,7 @@ get_header(); ?>
 			<div class="para1 para">
 				<!-- <i class="fas fa-quote-left"></i>
 				<i class="fas fa-quote-right"></i> -->
-				<p class="red p">
+				<p class="red p  align-right slide-in">
 				<span class="red-website"><a href="https://redacademy.com/vancouver/">RED Academy</a></span>, a technology and design school with a
 				agency-style environment that focuses on real client projects that focuses on real client projects in UX/UI design, web development & digital marketing.
 				</p>
