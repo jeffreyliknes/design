@@ -52,13 +52,25 @@ get_header(); ?>
 					I strive to make responsive front-end development to match the high-end quality of a company’s product.
 				</p>
 				<br>
-				<p>I attended the school for 3 months and learned proper practices, as well as, how to teach myself and where to
-					get started. In the 3 months, my group and I were assigned a company to develop a website imagined by a UX 
-					team in a different program. Together we built and presented a fully functioning website for kids to host their 
-					newly created online games.
-				</p>
 				<p>As of now, I’m learning React.js and sharpening my Vanilla javascript practices.</p>
 			</div>
+
+			<section class="portfolio">
+				<div class="website-completed">
+					<div class="diviwebsite backgroundken">
+						<a href="kensiron.ca" class="backgroundweb">Ken's Iron & Custom Design</a>
+					</div>
+					<div class="diviwebsite backgroundtent">
+						<a href="https://github.com/jeffreyliknes/Inhabitent" class="backgroundweb">Inhabitent (RED Project focusing on PHP)</a>
+					</div>
+					<div class="diviwebsite backgroundquotes">
+						<a href="https://github.com/jeffreyliknes/quotesondev" class="backgroundweb"></a>
+					</div>
+					<div class="diviwebsite backgroundume">
+						<a href="kensiron.ca" class="backgroundweb"></a>
+					</div>
+				</div>
+			</section>
 
 			<!-- Travelling -->
 			<div class="slideshow-container">
