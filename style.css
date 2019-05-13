@@ -976,6 +976,15 @@ li {
           justify-content: center;
   text-align: center; }
 
+.portfolio {
+  background-color: black; }
+
+.proj-header {
+  font-size: 2rem;
+  text-align: center;
+  text-transform: capitalize;
+  color: white; }
+
 .website-completed {
   min-height: 40vh; }
 
@@ -986,10 +995,43 @@ li {
   background: url(../../assets/kenlogo.svg) no-repeat; }
 
 .backgroundtent {
-  background: url(../../assets/canoe-girl.jpg) no-repeat; }
+  background: url(../../assets/inhabitent.svg) no-repeat; }
 
 .backgroundquotes {
   background: url(../../assets/quotes.png) no-repeat; }
 
 .backgroundume {
   background: url(../../assets/ume.png) no-repeat; }
+
+.website-completed {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  background: black;
+  text-align: center;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  grid-gap: 30px; }
+  .website-completed .diviwebsite {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 50%;
+    background-position: 100% 100%;
+    background-size: 100% 100%; }
+    .website-completed .diviwebsite:hover {
+      -webkit-filter: brightness(0.5);
+      filter: brightness(0.5); }
+
+.diviwebsite .backgroundweb {
+  visibility: hidden; }
+  .diviwebsite .backgroundweb .diviwebsite:hover .backgroundweb {
+    visibility: visible; }

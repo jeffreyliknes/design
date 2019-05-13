@@ -55,20 +55,23 @@ get_header(); ?>
 				<p>As of now, I’m learning React.js and sharpening my Vanilla javascript practices.</p>
 			</div>
 
+			<!-- Past Projects -->
+
 			<section class="portfolio">
+				<h2 class="proj-header">past projects</h2>
 				<div class="website-completed">
-					<div class="diviwebsite backgroundken">
-						<a href="kensiron.ca" class="backgroundweb">Ken's Iron & Custom Design</a>
-					</div>
-					<div class="diviwebsite backgroundtent">
-						<a href="https://github.com/jeffreyliknes/Inhabitent" class="backgroundweb">Inhabitent (RED Project focusing on PHP)</a>
-					</div>
-					<div class="diviwebsite backgroundquotes">
-						<a href="https://github.com/jeffreyliknes/quotesondev" class="backgroundweb"></a>
-					</div>
-					<div class="diviwebsite backgroundume">
-						<a href="kensiron.ca" class="backgroundweb"></a>
-					</div>
+					<a href="http://kensiron.ca/" class="diviwebsite backgroundken">
+						<div class="backgroundweb">Ken's Iron & Custom Design</div>
+					</a>
+					<a href="https://github.com/jeffreyliknes/Inhabitent" class="diviwebsite backgroundtent">
+						<div class="backgroundweb">Inhabitent (RED Project focusing on PHP)</div>
+					</a>
+					<a href="https://github.com/jeffreyliknes/quotesondev" class="diviwebsite backgroundquotes">
+						<div class="backgroundweb">Quotes on Dev. (RED Project focusing on REST API)</div>
+					</a>
+					<a href="https://github.com/jennapegg/ume-fall-2018" class="diviwebsite backgroundume">
+						<div class="backgroundweb">Final RED Project</div>
+</a>
 				</div>
 			</section>
 
@@ -138,7 +141,7 @@ get_header(); ?>
 				<br>
 				<p>Working as a bartender is a great way to meet people and train your memory. The functions held at VCC were most often
 				   extravagant, although, smaller functions were also commonplace. To hold a proper function, the whole team needs 
-				   to communicate and work together as team to be successful.</p>
+				   to communicate and work together as a team to be successful.</p>
 				<br>
 				<p>I spent over 2 years working as a warehouse and delivery manager at <a class="roche-website" href="https://www.roche-bobois.com/en-CA?gclid=EAIaIQobChMIrqfq9Mbs4QIVAZJbCh1WiA40EAAYASAAEgK0gPD_BwE">Roche Bobois</a> 
 				. Roche is a very high-end furniture company that prides itself on selling the highest quality furnishings.
