@@ -57,6 +57,16 @@
 
   // Slide in Scroll
 
+//   const textappear = document.getElementsByClassName('diviwebsite');
+// console.log(textappear);
+//   textappear.onmouseenter(
+//    $('.backgroundweb').css("visibility","visible")
+//   );
+  
+//   textappear.mouseout(function() {
+//     $('.backgroundweb').css("visibility","hidden");
+//   });
+
   // function debounce(func, wait = 20, immediate = true) {
   //   var timeout;
   //   return function() {

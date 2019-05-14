@@ -8,8 +8,9 @@
     text-transform: capitalize;
     color: white;
 }
+
 .website-completed {
-    min-height: 40vh;
+    height: 100vh;
 }
 
 .diviwebsite {
@@ -54,7 +55,7 @@
 
 .diviwebsite .backgroundweb {
     visibility: hidden;
-    .diviwebsite:hover .backgroundweb {
+    .diviwebsite:hover .backgroundweb:hover {
         visibility: visible;
 
     }

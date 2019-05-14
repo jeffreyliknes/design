@@ -986,7 +986,7 @@ li {
   color: white; }
 
 .website-completed {
-  min-height: 40vh; }
+  height: 100vh; }
 
 .diviwebsite {
   min-height: 200px; }
@@ -1033,5 +1033,5 @@ li {
 
 .diviwebsite .backgroundweb {
   visibility: hidden; }
-  .diviwebsite .backgroundweb .diviwebsite:hover .backgroundweb {
+  .diviwebsite .backgroundweb .diviwebsite:hover .backgroundweb:hover {
     visibility: visible; }
